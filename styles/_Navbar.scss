@@ -31,6 +31,14 @@ $font-nav: "Mochiy Pop P One", sans-serif;
     margin: 0;
     text-align: center;
   }
+  .linkedin-container{
+      display: none;
+  }
+  .logo{
+    font-size: 2rem;
+    user-select: none;
+    cursor: pointer;
+}
   @include desktop{
       ul{
           display: flex;
@@ -54,10 +62,17 @@ $font-nav: "Mochiy Pop P One", sans-serif;
       .menu-btn{
           display: none;
       }
+      .linkedin-container{
+          display: flex;
+          margin-right: 1.5rem;
+          color:color(linkedin);
+          .linkedin{
+              width: 30px;
+              height: 30px;
+          }
+      }
   }
-    .logo{
-        font-size: 2rem;
-    }
+
 }
 .mobile-active {
   height: 50vh;

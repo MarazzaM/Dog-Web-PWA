@@ -6,7 +6,7 @@ import { useState } from 'react'; //useState for reset on mobile
 //icons from react-icons 
 import { BiAlignRight } from "react-icons/bi";
 import { BiXCircle } from "react-icons/bi";
-
+import { BsLinkedin } from "react-icons/bs";
 
 function Nav() {
     const router = useRouter(); //Router for color on active
@@ -23,12 +23,12 @@ function Nav() {
         <nav  className={active ? "mobile-active nav" : "nav"}>
             <div className="logo" onClick={()=> setActive(false)}>
                <Link href="/">
-                   <>
+                   <span>
                     <span className="primary">Ñ</span>
                     <span className="secondary">A</span>
                     <span className="tertiary">M</span>
                     <span className="exclamation">!</span>
-                   </>
+                   </span>
                 </Link>
             </div>
             <ul>
@@ -51,7 +51,12 @@ function Nav() {
                 </li>
             </ul> 
             <div className="menu-btn">
-            <BiAlignRight className='bx bx-menu'  onClick={()=> setActive(!active)}></BiAlignRight>
+            <BiAlignRight className='bx bx-menu'  onClick={()=> setActive(!active)}/>
+            </div>
+            <div className="linkedin-container">
+                <a href="https://www.linkedin.com/in/matías-edgardo-marazza-cantero/" target="_blank" rel="noopener noreferrer">
+            <BsLinkedin className="linkedin"/>
+                </a>
             </div>
         </nav>
         </>
