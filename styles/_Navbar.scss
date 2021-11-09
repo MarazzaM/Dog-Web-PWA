@@ -12,10 +12,11 @@ $font-nav: "Mochiy Pop P One", sans-serif;
   align-items: center;
   min-height: 4rem;
   max-height: 100%;
-  background-color: color(primary);
+  background-color: white;
+  border-bottom: solid 1px gray;
   .logo {
     margin-left: 1rem;
-    color: white;
+    color: black;
   }
   .menu-btn {
     margin-right: 1rem;
@@ -54,6 +55,9 @@ $font-nav: "Mochiy Pop P One", sans-serif;
           display: none;
       }
   }
+    .logo{
+        font-size: 2rem;
+    }
 }
 .mobile-active {
   height: 50vh;
@@ -95,7 +99,7 @@ $font-nav: "Mochiy Pop P One", sans-serif;
   //animation
 }
 .active {
-  color: color(secondary);
+  color: color(primary);
   background-color: color(primary-dark);
   transform: translateY(10px);
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -116,4 +120,20 @@ $font-nav: "Mochiy Pop P One", sans-serif;
 .bx-menu {
   width: 20px;
   height: 20px;
+}
+.primary{
+    color: color(primary);
+}
+.secondary{
+    color: color(secondary);
+}
+.tertiary{
+    color: color(tertiary);
+}
+.exclamation{
+    background: -webkit-linear-gradient(color(primary), color(secondary), color(tertiary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
 }
