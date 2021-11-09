@@ -1,9 +1,10 @@
 import Head from 'next/head'
-import '../styles/globals.css'
-
+import '../styles/globals.scss'
+import Layout from '../components/Layout'
 export default function MyApp({ Component, pageProps }) {
   return (
     <>
+    <Layout>
       <Head>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -11,9 +12,9 @@ export default function MyApp({ Component, pageProps }) {
           name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
         />
-        <meta name="description" content="Description" />
-        <meta name="keywords" content="Keywords" />
-        <title>Next.js PWA Example</title>
+        <meta name="Dog web for API fetch test" content="dog random images" />
+        <meta name="dog random images" content="dog random images" />
+        <title>Dog Web</title>
 
         <link rel="manifest" href="/manifest.json" />
         <link
@@ -32,6 +33,7 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#317EFB" />
       </Head>
       <Component {...pageProps} />
+    </Layout>
     </>
   )
 }
