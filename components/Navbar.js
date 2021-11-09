@@ -14,7 +14,9 @@ function Nav() {
     return (
         <>
         <Head>
-
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet"></link>
         </Head>
         <nav  className={active ? "mobile-active nav" : "nav"}>
             <div className="logo" onClick={()=> setActive(false)}>
@@ -35,8 +37,10 @@ function Nav() {
                 <li className={router.pathname == "/Dogs" ? "active" : ""} onClick={()=> setActive(false)}>
                     <Link href="/Dogs">More dogs!</Link>
                 </li>
-                <li id='close-btn'>
+                <li className='close-btn'>
+                    <div className="container-close">
                     <BiXCircle className='bx bx-circle' onClick={()=> setActive(!active)}></BiXCircle>
+                    </div>
                 </li>
             </ul> 
             <div className="menu-btn">

@@ -1,8 +1,6 @@
 /*========== FONTS ==========*/
 //oswald
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
-//Gemunu Libre
-@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;500;600&display=swap');
 
 /*========== shortcuts function color and screen size==========*/
 @function color($color-name){
@@ -45,7 +43,6 @@ $desktop3:1130px;
 
 //Fuente
 $font-body: 'Oswald', sans-serif;
-$font-nav:'Gemunu Libre', sans-serif;
 
 $big-big-font: 8rem;
 $biggest-font-s: 9rem;
