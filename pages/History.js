@@ -1,11 +1,9 @@
-import React from 'react'
+import styles from '../styles/Home.module.scss'
 
-function History() {
-    return (
-        <div>
-            
-        </div>
-    )
+export default function History() {
+  return (
+  <div>
+    History
+  </div>
+  )
 }
-
-export default History
