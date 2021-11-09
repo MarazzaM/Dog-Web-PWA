@@ -13,13 +13,6 @@ function Nav() {
     const [active, setActive] = useState(false) //navbar mobile useState
     return (
         <>
-         {/* FONT OPTIMIZATION NEXTJS */}
-        <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet"></link>
-        </Head>
-        {/* end FONT OPTIMIZATION NEXTJS */}
         <nav  className={active ? "mobile-active nav" : "nav"}>
             <div className="logo" onClick={()=> setActive(false)}>
                <Link href="/">
