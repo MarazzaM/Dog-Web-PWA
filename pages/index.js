@@ -4,22 +4,26 @@ import Title from '../components/Title'
 import Buttons from '../components/Buttons'
 
 export default function Home() {
+  const image = require('../public/collie.webp');
+  const image1 = require('../public/puppy.webp');
+  const image2 = require('../public/puppy1.webp');
+
   const dog =[
     {
       id: "c1",
-      image: "/../public/collie.webp",
+      image: {image},
       quote: "They are cute, aren't they?",
       author: " -Me, after seeing any dog-"
     },
     {
       id: "c2",
-      image: "/../public/puppy.webp",
+      image: {image1},
       quote: "Can we adopt them all?",
       author: " -My partner at the animal shelter-"
     },
     {
       id: "c3",
-      image: "/../public/puppy1.webp",
+      image: {image2},
       quote: "They need much more food than that.",
       author: " -My grandma always when she sees me feed them-"
     }
