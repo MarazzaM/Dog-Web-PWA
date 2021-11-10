@@ -7,17 +7,16 @@ export default function MyApp({ Component, pageProps }) {
     <>
     <Layout>
       <Head>
-         <html lang="en" />
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="viewport"
-          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=yes"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
         />
         <meta name="Dog web for API fetch test" content="dog random images" />
         <meta name="dog random images" content="dog random images" />
         <title>Dog Web</title>
-      
+
         <link rel="manifest" href="/manifest.json" />
         <link
           href="/icons/favicon-16x16.png"
