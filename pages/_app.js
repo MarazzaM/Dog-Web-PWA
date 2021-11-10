@@ -7,7 +7,7 @@ export default function MyApp({ Component, pageProps }) {
     <>
     <Layout>
       <Head>
-         <html lang={lang} />
+         <html lang="en" />
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
