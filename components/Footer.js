@@ -5,10 +5,11 @@ import styles from "../styles/Footer.module.scss";
 
 function Footer() {
     const image = require('../public/face.svg');
+    
   return (
     <div className={styles.container}>
       <div>
-          
+
       <Image
         src= {image}
         alt="LOGO"

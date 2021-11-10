@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Card.module.scss'
 
 function Card(props) {
+    const image = require('../public/collie.webp');
     return (
 
         <div  className={styles.card} id={props.id}>
