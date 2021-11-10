@@ -1,9 +1,94 @@
 @import '_variables.scss';
+//general rules for the sections of the footer
+.footer-rules{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: $mb-1 0rem $mb-1 0rem;
+    width: 90%;
+    @include desktop{
+        width: auto;
+        flex: auto;
+    height: 10rem;
+    justify-content: center;
+    border: none;
+    }
+    }
+
 .container{
     display: flex;
-    background-color: color(quaternary);
+    background-color: #fff;
     width: 100%;
     min-height: 10rem;
-    justify-content: space-evenly;
     align-items: center;
+    box-shadow: 0px 2px 5px black;
+    border-top: 1px solid grey;
+    flex-direction: column;
+    @include desktop{
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    }
+}
+.text{
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+    margin: 1rem;
+    padding: 1rem;
+    h3{
+        margin-top: 0;
+    }
+    @extend .footer-rules;
+    display: flex;
+    max-width: 1024px;
+    @include desktop{
+        span{
+            width: 80%;
+        }
+        border: none;
+        margin: 0;
+        padding: 0;
+        font-size: .85rem;
+        justify-content: space-evenly;
+    }
+}
+.social{
+    @extend .footer-rules;
+    justify-content: space-around;
+    color: color(primary);
+   ul{
+    list-style: none;
+    margin: 1rem 0 0 0 ;
+    padding: 0;
+    display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+height: 55%;
+@include desktop{
+    margin-top: 0;
+}
+    li{
+    text-align: center;   
+    }
+   }
+   @include desktop{
+       border-left: 1px dotted grey;
+   }
+}
+.logo{
+    justify-content: space-around;
+    @extend .footer-rules;
+    @include desktop{
+        border-right: 1px dotted grey;
+    }
+}
+//colors social
+.github{
+    color: #c9510c;
+}
+.linkedin{
+    color: color(linkedin);
+}
+.portfolio{
+    color: #000;
 }

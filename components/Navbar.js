@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Head from 'next/head'
+import Nam from './Nam'
 import { useRouter } from "next/router"; //set active color
 import { useState } from 'react'; //useState for reset on mobile 
 //icons from react-icons 
@@ -15,14 +15,7 @@ function Nav() {
         <>
         <nav  className={active ? "mobile-active nav" : "nav"}>
             <div className="logo" onClick={()=> setActive(false)}>
-               <Link href="/">
-                   <span>
-                    <span className="primary">Ñ</span>
-                    <span className="secondary">A</span>
-                    <span className="tertiary">M</span>
-                    <span className="exclamation">!</span>
-                   </span>
-                </Link>
+               <Nam />
             </div>
             <ul>
                 <li className={router.pathname == "/" ? "active" : ""} onClick={()=> setActive(false)}>
