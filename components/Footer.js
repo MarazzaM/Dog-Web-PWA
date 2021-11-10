@@ -29,7 +29,7 @@ function Footer() {
             <a
               href="https://www.linkedin.com/in/matías-edgardo-marazza-cantero/"
               target="_blank"
-              rel="noopener noreferrer" className={styles.linkedin}
+              rel="noopener noreferrer" className={styles.portfolio}
             >
               Linkedin
             </a>
@@ -38,7 +38,7 @@ function Footer() {
             <a
               href="https://github.com/MarazzaM"
               target="_blank"
-              rel="noopener noreferrer" className={styles.github}
+              rel="noopener noreferrer" className={styles.portfolio}
             >
               Github
             </a>
