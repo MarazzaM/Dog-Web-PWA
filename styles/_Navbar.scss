@@ -4,6 +4,7 @@
 //Mochiy Pop P One
 
 .nav {
+  box-shadow: 0px 2px 5px black;
   text-transform: uppercase;
   width: 100%;
   display: flex;
@@ -83,7 +84,7 @@
     height: 80%;
     display: flex;
     li {
-        transition: all .5s ease;
+      transition: all .5s ease;
       align-items: center;
       display: flex;
       height: 20%;
@@ -132,8 +133,8 @@
   height: 30px;
 }
 .bx-menu {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 .primary{
     color: color(primary);
@@ -145,9 +146,35 @@
     color: color(tertiary);
 }
 .exclamation{
+  padding: 0.3rem;
     background: -webkit-linear-gradient(color(primary), color(secondary), color(tertiary));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-  
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.primary1{
+  @extend .primary;
+  animation: letters1 7s infinite;
+}
+.secondary1{
+  @extend .secondary;
+  animation: letters2 7s infinite;
+}
+.tertiary1{
+  @extend .tertiary;
+  animation: letters3 7s infinite;
+}
+.exclamation1{
+   @extend .exclamation;
+   background: linear-gradient(270deg, #ef476f, #ffd166, #06d6a0);
+    background-size: 600% 600%;
+
+    -webkit-animation: letters 5s ease infinite;
+    -moz-animation: letters 5s ease infinite;
+    -o-animation: letters 5s ease infinite;
+    animation: letters 5s ease infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
 }

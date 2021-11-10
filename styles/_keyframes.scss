@@ -1,3 +1,4 @@
+@import '_variables.scss';
 //entrance navbar
 @keyframes slide-in {
     0% {
@@ -7,3 +8,76 @@
       transform: translateY(0);
     }
   }
+
+@keyframes letters1{
+  0%{
+    color: color(primary)
+  }
+  25%{
+    color: color(secondary);
+  }
+  50%{
+    color: color(tertiary);
+  }
+  75%{
+    color: color(secondary);
+  }
+  100%{
+    color: color(primary);
+  }
+}
+@keyframes letters2{
+  0%{
+    color: color(secondary)
+  }
+  25%{
+    color: color(tertiary);
+  }
+  50%{
+    color: color(primary);
+  }
+  75%{
+    color: color(tertiary);
+  }
+  100%{
+    color: color(secondary);
+  }
+}
+@keyframes letters3{
+  0%{
+    color: color(tertiary)
+  }
+  25%{
+    color: color(primary);
+  }
+  50%{
+    color: color(secondary);
+  }
+  75%{
+    color: color(primary);
+  }
+  100%{
+    color: color(tertiary);
+  }
+}
+
+@-webkit-keyframes letters {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes letters {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes letters {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes letters {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}

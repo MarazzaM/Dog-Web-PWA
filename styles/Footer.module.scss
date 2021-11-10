@@ -1,0 +1,9 @@
+@import '_variables.scss';
+.container{
+    display: flex;
+    background-color: color(quaternary);
+    width: 100%;
+    min-height: 10rem;
+    justify-content: space-evenly;
+    align-items: center;
+}

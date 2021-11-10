@@ -1,0 +1,25 @@
+@import '_variables.scss';
+
+.container{
+    background-color: color(primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 3rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 80%;
+    @include desktop{
+        width: 75%;
+    }
+    a{
+        background-color: color(secondary);
+        padding: 1rem 3rem 1rem 3rem;
+        border-radius: 2rem;
+        margin: 1rem;
+        @include desktop{
+        min-width: 200px;
+        }
+    }
+}

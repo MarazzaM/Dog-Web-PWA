@@ -1,6 +1,6 @@
 import styles from  '../styles/Layout.module.scss';
 import Navbar from './Navbar';
-
+import Footer from './Footer';
 function Layout({children}) {
     return (
         <>
@@ -10,6 +10,7 @@ function Layout({children}) {
                 {children}
             </main>
         </div>
+        <Footer />
         </>
     )
 }
