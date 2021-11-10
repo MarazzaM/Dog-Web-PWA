@@ -4,7 +4,6 @@ import Title from '../components/Title'
 import Buttons from '../components/Buttons'
 
 export default function Home() {
-  
   const dog =[
     {
       id: "c1",

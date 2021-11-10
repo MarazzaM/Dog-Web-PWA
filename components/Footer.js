@@ -8,6 +8,7 @@ function Footer() {
   return (
     <div className={styles.container}>
       <div>
+          
       <Image
         src= {image}
         alt="LOGO"
