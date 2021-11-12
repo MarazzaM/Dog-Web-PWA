@@ -1,14 +1,14 @@
 import React from 'react'
-import Image from 'next/image'
 import styles from '../styles/Card.module.scss'
 
 function Card(props) {
+    const path = `${props.image}`;
     return (
 
         <div  className={styles.card} id={props.id}>
 
-        <Image
-        src={props.image}
+        <img
+        src= {require(`${path}`)}
         alt="Picture of the author"
         width={300}
         height={300}
