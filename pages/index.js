@@ -7,19 +7,19 @@ export default function Home() {
   const dog =[
     {
       id: "c1",
-      image: "/../public/collie.webp",
+      image: "collie.webp",
       quote: "They are cute, aren't they?",
       author: " -Me, after seeing any dog-"
     },
     {
       id: "c2",
-      image: "/../public/puppy.webp",
+      image: "puppy.webp",
       quote: "Can we adopt them all?",
       author: " -My partner at the animal shelter-"
     },
     {
       id: "c3",
-      image: "/../public/puppy1.webp",
+      image: "puppy1.webp",
       quote: "They need much more food than that.",
       author: " -My grandma always when she sees me feed them-"
     }
