@@ -1,0 +1,53 @@
+@import '_variables.scss';
+
+.title{
+    span{
+    font-size: $big-big-font;
+    }
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    h2{
+        font-size: $h2-font-size;
+        text-transform: uppercase;
+        color: crimson;
+    }
+
+}
+.text{
+    padding: 1rem;
+    background: white;
+    border-radius: 1rem;
+    border: 3px solid black;
+    font-size: $regular-font;
+    max-width: 1024px;
+}
+//branch
+.branches{
+    display: flex;
+    flex-direction: column;
+    
+    @include desktop{
+        width: 100vw;
+        max-width: 2000px;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+.branch{
+    @extend.text;
+    padding: .5rem;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 1rem;
+    @include desktop{
+        width: auto;
+    }
+}
