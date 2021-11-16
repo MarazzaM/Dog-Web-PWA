@@ -1,0 +1,10 @@
+@import '_variables.scss';
+
+.title{
+    span{
+    font-size: $h1-font-size;
+    @include desktop{
+    font-size: $big-big-font;
+    }
+    }
+}

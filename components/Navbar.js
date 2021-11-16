@@ -27,8 +27,8 @@ function Nav() {
                 <li className={router.pathname == "/History" ? "active" : ""} onClick={()=> setActive(false)}>
                     <Link href="/History">History</Link>
                 </li>
-                <li className={router.pathname == "/Dogs" ? "active" : ""} onClick={()=> setActive(false)}>
-                    <Link href="/Dogs">More dogs!</Link>
+                <li className={router.pathname == "/Contact" ? "active" : ""} onClick={()=> setActive(false)}>
+                    <Link href="/Contact">Contact</Link>
                 </li>
                 <li className='close-btn'>
                     <div className="container-close">

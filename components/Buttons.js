@@ -7,7 +7,7 @@ function Buttons() {
         <div className={styles.container}>
             <Link href="/About">About</Link>
             <Link href="/History">History</Link>
-            <Link href="/Dogs">More Dogs</Link>
+            <Link href="/Contact">Contact</Link>
         </div>
     )
 }
