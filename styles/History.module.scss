@@ -1,0 +1,25 @@
+@import '_variables.scss';
+
+.title{
+    span{
+    font-size: $h1-font-size;
+    @include desktop{
+    font-size: $big-big-font;
+    }
+    }
+}
+.text{
+    margin: auto;
+    width: 90%;
+    background: #fff;
+    border: 5px black solid;
+    border-radius: 1rem;
+}
+.link{
+    text-decoration: none;
+    color: color(tertiary);
+    transition: all .5s ease;
+    &:hover{
+        color:color(tertiary-dark)
+    }
+}

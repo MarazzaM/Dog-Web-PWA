@@ -8,3 +8,17 @@
     }
     }
 }
+.text{
+    padding: 1rem;
+    background: white;
+    border-radius: 1rem;
+    border: 3px solid black;
+    font-size: $regular-font;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3rem;
+    @include desktop{
+        width: auto;
+    max-width: 1024px;
+    }
+}

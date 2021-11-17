@@ -40,25 +40,25 @@ export const ContactForm = () => {
     <form action="" onSubmit={sendEmail} className={styles.form}>
         <div className="formWord">
           <h2>Join Us!</h2>
-          <span className="primary">Full name</span>
+          <span className="primary">Full Name</span>
           <br />
-          <input type="text" name="fullname" className={styles.input} required />
+          <input type="text" name="fullname" placeholder="Insert name" className={styles.input} required />
           <br />
           <span className="primary">Phone Number</span>
           <br />
-          <input type="tel" size="20" name="phone" className={styles.input} required />
+          <input type="tel" size="20" name="phone"  pattern="[0-9]{2}-[0-9]{4}-[0-9]{4} " placeholder="11-8888-8888" className={styles.input} required />
           <br />
           <span className="primary">Enter Email</span>
           <br />
-          <input type="email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" name="email" className={styles.input} required />
+          <input type="email" placeholder="Insert email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" name="email" className={styles.input} required />
           <br />
         </div>
         <div className="formWord">
           <span className="primary">Message</span>
           <br />
-          <textarea name="message" className={styles.textfield} id="" cols="15" rows="5" required></textarea>
+          <textarea name="message" placeholder="Tell us about you!..." className={styles.textfield} id="" cols="15" rows="5" required></textarea>
           <br />
-          <button>Submit</button>
+          <button className={styles.button}>Submit</button>
           <div className="row">{result ? <Result/> : null}</div>
         </div>
     </form>
